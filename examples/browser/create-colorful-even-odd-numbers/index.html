@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    function showNumbers() {
+      const body = document.querySelector('body');
+
+      function even(number) {
+        return number % 2 === 0;
+      }
+
+      for (let index = 0; index <= 1000; index++) {
+        // create an element
+        const divElement = document.createElement('div');
+        let color = '';
+
+        // change the content
+        divElement.innerText = index;
+
+        // even/odd
+        if (even(index)) {
+          // the number is even
+          color = 'red';
+        } else {
+          // the number is odd
+          color = '#0000FF';
+        }
+
+        // change color using style
+        divElement.style.color = color;
+
+        // append the new element
+        body.appendChild(divElement);
+      }
+    }
+
+    window.addEventListener('load', showNumbers);
+  </script>
+</body>
+</html>

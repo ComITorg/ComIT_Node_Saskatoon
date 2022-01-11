@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learing CSS</title>
+  <style>
+    form {
+      background-color: #eee;
+      border: 1px solid #ddd;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      width: 540px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      color: #1abc9c;
+    }
+    
+    h1 {
+      margin: 0 0 40px 0;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    fieldset label {
+      display: inline-block;
+      width: 80px;
+      padding-right: 20px;
+    }
+
+    input[type="text"], input[type="password"], textarea {
+      display: inline-block;
+      width: 417px;
+      padding: 0.5em;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      color: gray;
+      outline-color: #1abc9c;
+    }
+
+    textarea {
+      vertical-align: middle;
+    }
+
+    input[type="submit"] {
+      display: block;
+      padding: 19px 39px 18px 39px;
+      color: #FFF;
+      background: #1abc9c;
+      font-size: 18px;
+      text-align: center;
+      font-style: normal;
+      width: 100%;
+      border: 1px solid #16a085;
+    }
+  
+    fieldset:last-child {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>Create User</h1>
+    <fieldset>
+        <label>Username:</label>
+        <input type="text" name="username">
+    </fieldset>
+    <fieldset>
+        <label>Password:</label>
+        <input type="password" name="password">
+    </fieldset>
+    <fieldset>
+        <label>Email:</label>
+        <input type="text" name="email">
+    </fieldset>
+    <fieldset>
+        <label>Type:</label>
+        <input type="text" name="type">
+    </fieldset>
+    <fieldset>
+        <label>Notes:</label>
+        <textarea name="notes"></textarea>
+    </fieldset>
+    <fieldset>
+      <input type="submit" value="Create">
+    </fieldset>
+  </form>
+</body>
+</html>

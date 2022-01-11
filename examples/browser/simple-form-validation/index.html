@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .errors {
+      font-family: Arial;
+      color: red;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://google.com">
+    <input type="text" value="" name="username">
+    <input type="password" value="" name="password">
+    <input type="submit" value="Submit">
+    <div class="errors"></div>
+  </form>
+
+  <script>
+    window.addEventListener('load', function() {
+      const form = document.querySelector('form');
+      
+      function isValidUsername(username) {
+        return username !== '';
+      }
+
+      function isValidPassword(password) {
+        return password !== '';
+      }
+
+      function getMessageError(error) {
+        let errorMessage = '';
+        
+        switch(error) {
+          case 'username':
+            errorMessage = 'Please input a valid username';
+            break;
+          case 'password':
+            errorMessage = 'Please input a valid password'; 
+            break;  
+          default: 
+            errorMessage = 'Something wen\'t wrong, please try it later..';
+        }
+
+        return errorMessage;
+      }
+
+      function showErrors(errorCollection) {
+        const errorContainer = document.querySelector('.errors');
+        
+        errorCollection.forEach(function(error) {
+          const input = document.querySelector(`[name=${error}`);
+          const message = getMessageError(error);
+          
+          const errorElement = document.createElement('div');
+
+          errorElement.innerText = message;
+          input.style.border = '1px solid red';
+          errorContainer.appendChild(errorElement);
+        });
+      }
+
+      function clearErrorMessages() {
+        const errorContainer = document.querySelector('.errors');
+        const username = document.querySelector('[name=username');
+        const password = document.querySelector('[name=password');
+        
+        errorContainer.innerHTML = '';
+        
+        username.style.boder = 'none';
+        password.style.boder = 'none';
+      }
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        clearErrorMessages();
+        
+        const username = form.elements['username'].value;
+        const password = form.elements['password'].value;
+        const errors = [];
+        
+        if (!isValidUsername(username)) {
+          errors.push('username');
+        }
+
+        if (!isValidPassword(password)) {
+          errors.push('password');
+        }
+
+        if (errors.length) {
+          showErrors(errors);
+        } else {
+          form.submit();
+        }
+      })
+    });
+  </script>
+</body>
+</html>

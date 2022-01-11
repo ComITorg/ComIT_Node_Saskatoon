@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Learning layout CSS</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+    
+    .container {
+      width: 960px;
+      margin: 0 auto;
+      background-color: #ddd;
+      border: 1px solid gray;
+    }
+    
+    header {
+      padding: 20px;
+      color: #eee;
+    }
+
+    header, footer {
+      background-color: gray;
+    }
+    
+    .side {
+      float: left;
+      width: 150px;
+    }
+    
+    .side ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .side ul li a {
+      display: block;
+      padding: 10px 0;
+      text-align: center;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid gray;
+    }
+
+    .side ul li a:hover {
+      color: #eee;
+      background-color: gray;
+    }
+    
+    .main {
+      margin-left: 150px;
+      background-color: #eee;
+      padding: 20px;
+    }
+
+    .main h1{
+      margin-top: 0;
+    }
+    
+    .main p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    
+    footer {
+      clear: both;
+      color: #eee;
+      text-align: center;
+      padding: 10px 0;
+    }
+    footer .love {
+      color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <div class="side">
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>Main Content</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lorem justo, malesuada nec tempor non, congue ut tellus. Morbi porta ornare risus. Sed eu dictum justo. Phasellus luctus non lacus quis tristique. Quisque dui nibh, porttitor et metus non, elementum sollicitudin risus. Vestibulum ut sapien viverra, varius lorem malesuada, scelerisque lorem. Vestibulum vel nibh dui. Proin quis erat elit. Integer sagittis eu magna sit amet laoreet. Nullam fermentum vehicula consequat. Aenean ultricies condimentum nisi, in viverra mi convallis in. Duis non pharetra turpis. Sed vehicula, lectus in aliquam finibus, purus neque condimentum purus, eget tristique enim lorem non ligula. In vehicula libero sed mi ultrices, sed mollis nulla ornare.</p>
+      <p>Sed vulputate suscipit vulputate. Nunc at ornare orci. Phasellus dictum vestibulum lacus ac volutpat. Vivamus congue pellentesque volutpat. Praesent eget dui enim. Donec turpis orci, tristique fermentum sollicitudin ut, tempus sit amet augue. Etiam mattis finibus pellentesque.</p>
+      <p>Cras eget consequat sem. Curabitur tempus diam eu accumsan fermentum. Suspendisse sed augue ullamcorper, fermentum ex eu, convallis nisi. Mauris fringilla est eu nisl convallis lacinia. Sed consectetur, dolor ac tempus placerat, lacus metus maximus neque, porttitor gravida dolor ex nec est. Curabitur blandit volutpat neque, eu vestibulum justo aliquam vel. Cras fringilla enim vel pharetra elementum. Etiam eu nibh massa.</p>
+      <p>Cras porta ultricies magna, eget ultrices est blandit sed. Ut non ornare arcu. Morbi molestie dictum hendrerit. Curabitur ac quam in dolor blandit pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer efficitur bibendum neque ut pellentesque. Nam eu efficitur quam.</p>
+      <p>Fusce nec placerat orci. Nullam sollicitudin nisl nibh, eget accumsan augue commodo quis. Nunc dolor tortor, facilisis sed cursus id, ultrices vitae purus. Proin vel neque non tortor facilisis scelerisque. Nullam nec sagittis odio, quis iaculis velit. Nulla aliquet odio dignissim mi posuere, a dictum sapien interdum. Quisque posuere, leo vel pharetra pretium, nunc elit tempus quam, ut feugiat magna mi sed purus. Phasellus cursus eros vel interdum mattis.</p>
+    </div>
+    <footer>
+      <p>ComIT &amp; <span class="love">&lt;3</span></p>
+    </footer>
+  </div>
+</body>
+</html>

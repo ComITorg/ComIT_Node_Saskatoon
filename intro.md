@@ -6,7 +6,7 @@
 
 Joined the slack through the workspace link:
 
-- [Node.js Regina 2019](https://noderegsept19.slack.com)
+- [Node.js Regina 2922 Jan](https://nodeskjan10.slack.com)
 
 ## Installing Git
 

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning CSS</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #6e6f74;
+      }
+
+      thead {
+        color: #685e5c;
+        font-weight: bold;
+      }
+
+      tbody tr {
+        border-bottom: 1px solid #ddd;
+      }
+
+      th, td {
+        padding: 20px;
+      }
+      
+      tbody td:first-child {
+        color: #3e7589;
+      }
+
+      tbody tr:last-child {
+        border: none;
+      }
+
+      tfoot {
+        text-align: center;
+      }
+
+      tfoot a {
+        display: inline-block;
+        text-decoration: none;
+        color: #aaa;
+        margin-right: 10px;
+      }
+      
+      tfoot a.active {
+        color: white;
+        font-weight: bold;
+        background-color: #008cba;
+        padding: 10px 15px;
+        border-radius: 10px;
+      }
+
+      .selected {
+        background-color: #d9edf6;
+      }
+      .error {
+        background-color: #f2dedf;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 4</th>
+            <th>Header 5</th>
+            <th>Header 6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="error">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr class="selected">
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+        <tr>
+          <td>Content 1</td>
+          <td>Content 2</td>
+          <td>Content 3</td>
+          <td>Content 4</td>
+          <td>Content 5</td>
+          <td>Content 6</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            <a href="#">first</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">last</a>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

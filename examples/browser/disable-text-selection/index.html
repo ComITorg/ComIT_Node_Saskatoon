@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Disable text selection</title>
+</head>
+<body>
+  <p>Text Text Text Text Text Text Text Text Text Text </p>
+  <p>Text Text Text Text Text Text Text Text Text Text </p>
+  <p>Text Text Text Text Text Text Text Text Text Text </p>
+  <p>Text Text Text Text Text Text Text Text Text Text </p>
+  <p>Text Text Text Text Text Text Text Text Text Text </p>
+  <p>Text Text Text Text Text Text Text Text Text Text </p>
+  <p>Text Text Text Text Text Text Text Text Text Text </p>
+  <p>Text Text Text Text Text Text Text Text Text Text </p>
+
+  <script>
+    window.onload = function() {
+
+      function logAndCancel(event) {
+        console.log(event.type);
+        return false;
+      }
+
+      const style = document.createElement('style');
+
+      style.innerText = '* {user-select: none; color: red}';
+
+      document.head.appendChild(style);
+
+      document.body.oncopy = logAndCancel;
+
+      document.body.oncut = logAndCancel;
+
+      document.body.onpaste = logAndCancel;
+    }
+  </script>
+</body>
+</html>

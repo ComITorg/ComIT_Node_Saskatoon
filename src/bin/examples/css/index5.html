@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors</title>
+    <style>
+    a:link {
+      color: red;
+    }
+
+    a:hover {
+      color: orange;
+    }
+
+    a:visited {
+      color: purple;
+    }
+    header h1 {
+      color: lime;
+    }
+    
+    section > h1 {
+      color: coral;
+    }
+
+    h1::first-letter {
+      color: black;
+    }
+
+    p ~ p {
+      color: darkgoldenrod;
+    }
+
+    li + li {
+      color: deeppink;
+    }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="http://facebook.com" target="_blank">Facebook</a>
+      <a href="http://google.com" target="_blank">Google</a>
+      <a href="http://yahoo.com" target="_blank">Yahoo</a>
+    </nav>
+    <header>
+      <h1>CSS Selectors site</h1>
+      <hr>
+    </header>
+    <article>
+      <section>
+        <h1>Great news, we're learning CSS selectors!!</h1>
+        <ol>
+          <li>ID Selector</li>
+          <li>Class Selector</li>
+          <li>Shared CSS code between selectors</li>
+          <li>Universal selector</li>
+          <li>Attribute selectors</li>
+          <li>Pseudo-classes selector</li>
+          <li>Descendant selectors</li>
+          <li>Child selectors</li>
+          <li>Pseudo-elements</li>
+          <li>Adjacent sibling combinator</li>
+          <li>General sibling combinator</li>
+        </ol>
+        <foot>
+          <p>News footer</p>
+          <p>News footer</p>
+        </foot>
+      </section>
+    </article>
+    <foot>
+      <hr>
+      <p>Site footer</p>
+      <hr>
+    </foot>
+  </body>
+</html>
