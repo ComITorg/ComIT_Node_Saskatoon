@@ -10,3 +10,5 @@ NodeJS Saskatoon course - January 2022
   * `You've surfed the Internet but how does it work?`
 * [Our First Site](first-site.md)
   * `A tutorial to say hello to the world`
+* [Git & Github](git.md)
+  * `git: Multiplayer Notepad`
