@@ -12,3 +12,5 @@ NodeJS Saskatoon course - January 2022
   * `A tutorial to say hello to the world`
 * [Git & Github](git.md)
   * `git: Multiplayer Notepad`
+* [HTML](html.md)
+  * `Structuring the web`
