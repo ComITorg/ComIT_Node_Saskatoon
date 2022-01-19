@@ -14,3 +14,5 @@ NodeJS Saskatoon course - January 2022
   * `git: Multiplayer Notepad`
 * [HTML](html.md)
   * `Structuring the web`
+* [CSS](css.md)
+  * `.thumbs { vertical-align: top; }`
