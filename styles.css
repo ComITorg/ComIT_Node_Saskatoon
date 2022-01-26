@@ -1,0 +1,21 @@
+
+
+@font-face {
+  font-family: "Bitstream Vera Serif Bold";
+  src: url("https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf");
+}
+
+/* In this case we define a local (our server) font */
+@font-face {
+  font-family: MyHelvetica;
+  src: local("Helvetica Neue Bold"),
+      local("HelveticaNeue-Bold"),
+      url(MgOpenModernaBold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("font//Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}

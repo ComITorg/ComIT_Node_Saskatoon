@@ -16,5 +16,9 @@ NodeJS Saskatoon course - January 2022
   * `Structuring the web`
 * [CSS](css.md)
   * `.thumbs { vertical-align: top; }`
+* [Bootstrap](bootstrap.md)
+  * `Giving complex CSS the boot`
 * [JavaScript](javascript.md)
   * `Promise you will enjoy this`
+* [Browser API](browserapi.md)
+  * `Protect and serve`
