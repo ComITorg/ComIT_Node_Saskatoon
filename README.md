@@ -22,3 +22,5 @@ NodeJS Saskatoon course - January 2022
   * `Promise you will enjoy this`
 * [Browser API](browserapi.md)
   * `Protect and serve`
+* [Node.js](nodejs.md)
+  * `Oh Node You Didn't`
