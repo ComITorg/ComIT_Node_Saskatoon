@@ -1581,7 +1581,7 @@
 
   // or
 
-  form.addEventHandler('submit', function(event) {
+  form.addEventListener('submit', function(event) {
     event.preventDefault();
   });
   ```
