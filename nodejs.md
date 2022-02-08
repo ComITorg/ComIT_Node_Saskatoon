@@ -512,10 +512,10 @@
 
   **math.js**
   ```js
-  const revenew = 50;
+  const revenue = 50;
 
   const priceCalculation = function(price) {
-    return price + revenew;
+    return price + revenue;
   }
 
   module.exports = priceCalculation;
