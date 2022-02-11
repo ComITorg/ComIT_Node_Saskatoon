@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 9;
+}
+
+body {
+  color: black;
+  font-family: Arial, Helvetica, san-serif;
+  font-size: 16px;
+}
+
+.superhero-container {
+  display: inline-block;
+  max-height: 200px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.superhero-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.superhero-image {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.create-container {
+  padding: 10px;
+}
+
+.create-container input[type='text'], .create-container input[type='file'] {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.create-container button, .create-container input[type='file']{
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+}
