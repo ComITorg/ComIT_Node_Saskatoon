@@ -26,3 +26,5 @@ NodeJS Saskatoon course - January 2022
   * `Oh Node You Didn't`
 * [Building a Node.js site with Express](buildingsite.md)
   * `Express yourself`
+* [MongoDB & Mongoose](mongodb.md)
+  * `This franchise has NoSQL`
