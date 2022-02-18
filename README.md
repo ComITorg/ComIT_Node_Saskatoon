@@ -28,3 +28,5 @@ NodeJS Saskatoon course - January 2022
   * `Express yourself`
 * [MongoDB & Mongoose](mongodb.md)
   * `This franchise has NoSQL`
+* [Deploy](deploy.md)
+  * `Sharing to world wide wide`
