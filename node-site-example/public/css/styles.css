@@ -56,3 +56,13 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+button.plus, button.minus {
+  background-color: black;
+  color: white;
+}
+
+.addition {
+  display: flex;
+  justify-content: space-around;
+}

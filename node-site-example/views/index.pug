@@ -4,9 +4,15 @@ block content
   h1 Superheroes
   p This site contains a list of superheroes information 
   include ./create.pug
+  div.addition
+    button.minus -
+    p.number 0
+    button.plus +
+    p.itemPrice 12.99
+    p.total 0
 
   each superhero in superheroes 
     div.superhero-container
-      a(href='/superheroes/' + superhero.id)
-        h3= superhero.name
+      a(href='/superheroes/' + superhero.name)
+        h3= superhero.name || 'no name'
         img.superhero-image(src='/img/' + superhero.image)
