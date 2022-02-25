@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
 const port = 8000;
-const url = 'mongodb://localhost:27017';
+const url = process.env.MONGODB_URL;
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.listen(port, () => {
