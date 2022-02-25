@@ -1,7 +1,16 @@
-// const express = require('express')
-// console.log(express)
 
-const getPrice = require('./math');
-const price = getPrice(200);
+function cat1 (parameter) {
+  console.log('cat:', parameter)
+}
 
-console.log(price);
+const cat2 = function(parameter) {
+  console.log('cat:', parameter)
+}
+
+const cat3 = (parameter) => {
+  console.log('cat:', parameter)
+}
+
+console.log(cat1(hi));
+console.log(cat2(hi));
+console.log(cat3(hi));
