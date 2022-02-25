@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
 const port = 8000;
-const url = 'mongodb+srv://admin:comit_node_sask@cluster0.hpb5v.mongodb.net/public?retryWrites=true&w=majority';
+const url = 'mongodb://localhost:27017';
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.listen(port, () => {
