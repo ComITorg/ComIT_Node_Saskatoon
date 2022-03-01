@@ -1,5 +1,6 @@
 extends ./layout.pug
-
+block variables 
+  - var currentTab = 'menu'
 block content 
   h1 Superheroes
   p This site contains a list of superheroes information 
@@ -10,7 +11,8 @@ block content
     button.plus +
     p.itemPrice 12.99
     p.total 0
-
+  div= name
+  div= age
   each superhero in superheroes 
     div.superhero-container
       a(href='/superheroes/' + superhero.name)

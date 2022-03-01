@@ -6,7 +6,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const app = express();
 const port = 8000;
-const url = process.env.MONGODB_URL;
+const url = 'mongodb://localhost:27017';
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.listen(port, () => {
@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
     const collection = db.collection('superheroes');
     collection.find({}).toArray((error, documents) => {
       client.close();
-      res.render('index', { superheroes: documents });
+      res.render('index', { superheroes: documents, name: 'Chen', age: 12 });
     })
   });
 });
@@ -53,6 +53,10 @@ app.get('/superheroes/:superheroId', (req, res) => {
       res.render('superhero', { superhero: documents.find(superhero => superhero.name === req.params.superheroId)})
     })
   });
+});
+
+app.get('/villains', (req, res) => {
+  res.render('villains')
 });
 
 app.post('/superhero', upload.single('file'), (req, res) => {
