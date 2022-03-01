@@ -66,3 +66,8 @@ button.plus, button.minus {
   display: flex;
   justify-content: space-around;
 }
+
+.name {
+  font-size: 50px;
+  margin-bottom: 50px;
+}

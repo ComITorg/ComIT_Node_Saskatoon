@@ -59,6 +59,10 @@ app.get('/villains', (req, res) => {
   res.render('villains')
 });
 
+app.get('/index', (req, res) => {
+  res.sendFile(__dirname + "/views/indexhtml.html");
+});
+
 app.post('/superhero', upload.single('file'), (req, res) => {
   MongoClient.connect(url, function(err, client) {
     const db = client.db('comics');

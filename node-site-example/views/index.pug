@@ -11,8 +11,8 @@ block content
     button.plus +
     p.itemPrice 12.99
     p.total 0
-  div= name
-  div= age
+  div.name= name
+  div.age= age
   each superhero in superheroes 
     div.superhero-container
       a(href='/superheroes/' + superhero.name)
