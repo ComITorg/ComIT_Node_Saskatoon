@@ -1,0 +1,10 @@
+extends ./layout.pug
+block content 
+  div 
+    a(href='/') back
+  .create-container
+    form(action='/blog/' + blog.url method='patch' enctype="multipart/form-data")
+      input(type='text', placeholder='Blog Name' required='required', name='name' value= blog.name || '')
+      input(type='text', placeholder='Blog Description' required='required', name='description' value= blog.description || '')
+      textarea(placeholder='Blog Body' required='required' name='body')= blog.body      
+      button#edit Edit

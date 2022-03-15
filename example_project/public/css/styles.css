@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 9;
+}
+
+body {
+  color: black;
+  font-family: Arial, Helvetica, san-serif;
+  font-size: 16px;
+}
+
+.blog-container {
+  display: inline-block;
+  max-height: 200px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.superhero-container a {
+  color: black;
+  text-decoration: none;
+}
+
+.create-container {
+  padding: 10px;
+}
+
+.create-container input[type='text'], .create-container textarea {
+  font-size: 16px;
+  padding: 5px;
+  font-family: Arial, Helvetica, san-serif;
+}
+
+textarea {
+  min-height: 10em;
+}
+
+.create-container button, .create-container input[type='file']{
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin: 24px;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}

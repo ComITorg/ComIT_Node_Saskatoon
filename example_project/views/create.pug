@@ -1,0 +1,10 @@
+extends ./layout.pug
+block content 
+  div 
+    a(href='/') back
+  .create-container
+    form(action='/blog' method='post')
+      input(type='text', placeholder='Blog Name' required='required', name='name')
+      input(type='text', placeholder='Blog Description' required='required', name='description')
+      textarea(placeholder='Blog Body' required='required' name='body')  
+      button#create Create

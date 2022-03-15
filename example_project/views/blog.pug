@@ -1,0 +1,12 @@
+extends ./layout.pug
+
+block content
+  div 
+    a(href='/') back
+  h3= blog.name 
+  h6= blog.description
+  p= blog.body
+  .buttons
+    button#edit 
+      a(href='/edit_blog/' + blog.url) Edit
+    button#delete Delete

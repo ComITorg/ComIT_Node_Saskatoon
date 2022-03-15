@@ -1,0 +1,10 @@
+extends ./layout.pug
+block content 
+  h1 Blogs
+  p This site contains a list of blogs created by myself 
+  a(href='/create') create new blog
+  each blog in blogs 
+    div.blogs-container
+      a(href='/blog/' + blog.url)
+        h3= blog.name || 'no name'
+        h6= blog.description || 'no description'
