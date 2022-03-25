@@ -2,6 +2,8 @@
 NodeJS Saskatoon course - January 2022
 # Node.js
 
+This is a new branch
+
 ## Content
 
 * [Introduction to Development](intro.md)
